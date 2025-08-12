@@ -1,11 +1,11 @@
 import tl from "../assets/tl.png";
-import appointmentBook from "../assets/appointmentBooking.png";
+import AppointmentBook from "./../assets/appointmentBooking.png";
 export default function Projects() {
   const projects = [
     {
       title: "Clinicbook",
       desc: "An Appointment Booking System built with Spring Boot (backend) and React.js (frontend) for seamless appointment scheduling and management. Ideal for clinics, service providers, or any business that requires managing appointments efficiently.",
-      img: appointmentBook,
+      img: AppointmentBook,
       href: "https://github.com/ashutoshtiwari0928/clinicbookApplication.git",
     },
     {
