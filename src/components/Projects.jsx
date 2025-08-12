@@ -1,5 +1,6 @@
 import tl from "../assets/tl.png";
 import AppointmentBook from "./../assets/appointmentBooking.png";
+import employeemgmtsystem from "./../assets/employeemgmtsystem.jpeg";
 export default function Projects() {
   const projects = [
     {
@@ -16,9 +17,9 @@ export default function Projects() {
     },
     {
       title: "AI Blog + Chat Application",
-      desc: "",
-      img: tl,
-      href: "#project",
+      desc: "This is the backend of the Employee Management System, built using Spring Boot and MySQL. It provides RESTful APIs for managing employees, handling authentication, and performing CRUD operations.",
+      img: employeemgmtsystem,
+      href: "https://github.com/ashutoshtiwari0928/Employee-Management-System-Backend",
     },
   ];
 
