@@ -3,7 +3,7 @@ import logoleetcode from "../assets/logoleetcode.png";
 import logogmail from "../assets/logogmail.png";
 import logohackerrank from "../assets/logohackerrank.png";
 import logogithub from "../assets/logogithub.jpeg";
-
+import logogfg from "../assets/gfg.png";
 export default function Contact() {
   const links = [
     {
@@ -36,11 +36,17 @@ export default function Contact() {
       title: "ashutoshtiwari25",
       src: logohackerrank,
     },
+    {
+      name: "Geeksforgeeks",
+      href: "https://www.geeksforgeeks.org/user/ashutoshtiwari200128/",
+      title: "ashutoshtiwari200128",
+      src: logogfg,
+    },
   ];
   return (
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
+        <h2 className="text-3xl font-bold mb-8">Profiles & Contact</h2>
         <ul className="justify-center space-x-6 space-y-3">
           {links.map((link) => (
             <li key={link} className="flex items-center gap-2">
