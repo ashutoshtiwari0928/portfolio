@@ -19,7 +19,7 @@ export default function Timeline() {
   ];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section id="timeline" className="bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">My Journey</h2>
         <div className="relative border-l border-gray-300">
