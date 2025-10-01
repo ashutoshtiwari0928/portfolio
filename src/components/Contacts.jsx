@@ -4,43 +4,25 @@ import logogmail from "../assets/logogmail.png";
 import logohackerrank from "../assets/logohackerrank.png";
 import logogithub from "../assets/logogithub.jpeg";
 import logogfg from "../assets/gfg.png";
+import { SiInstagram, SiLinkedin, SiGmail } from "react-icons/si";
+import { Icon } from "lucide-react";
 export default function Contact() {
   const links = [
     {
-      name: "Github",
-      href: "https://github.com/ashutoshtiwari0928",
-      title: "ashutoshtiwari0928",
-      src: logogithub,
-    },
-    {
-      name: "Email",
+      Icon: SiGmail,
       href: "mailto:ashutoshtiwari200128@gmail.com",
-      title: "ashutoshtiwari200128@gmail.com",
-      src: logogmail,
+      title: "Email",
     },
     {
-      name: "Linkedin",
+      Icon: SiLinkedin,
       href: "https://www.linkedin.com/in/ashutosh-tiwari28/",
-      title: "ashutosh-tiwari28",
+      title: "Linkedin",
       src: logolinkedin,
     },
     {
-      name: "Leetcode",
-      href: "https://leetcode.com/u/the_ashutosh/",
-      title: "the_ashutosh",
-      src: logoleetcode,
-    },
-    {
-      name: "Hackerrank",
-      href: "https://www.hackerrank.com/profile/ashutoshtiwari25",
-      title: "ashutoshtiwari25",
-      src: logohackerrank,
-    },
-    {
-      name: "Geeksforgeeks",
-      href: "https://www.geeksforgeeks.org/user/ashutoshtiwari200128/",
-      title: "ashutoshtiwari200128",
-      src: logogfg,
+      Icon: SiInstagram,
+      href: "https://www.instagram.com/the_ashu_99/",
+      title: "Instagram",
     },
   ];
   return (
@@ -50,10 +32,13 @@ export default function Contact() {
         <ul className="justify-center space-x-6 space-y-3">
           {links.map((link) => (
             <li key={link} className="flex items-center gap-2">
-              <img src={link.src} className="w-9" />
-              <p>
-                {link.name} :{" "}
-                <a href={link.href} className="text-blue-400" target="_blank">
+              <p className="flex">
+                <a
+                  href={link.href}
+                  className="hover:text-blue-400"
+                  target="_blank"
+                >
+                  <link.Icon size={24} />
                   {link.title}
                 </a>
               </p>

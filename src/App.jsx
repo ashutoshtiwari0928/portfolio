@@ -4,9 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
 import Footer from "./components/Fotter";
 import { Popover } from "@base-ui-components/react/popover";
 function App() {
@@ -16,9 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Projects />
-      <Skills />
       <Timeline />
-      <Contacts />
       <Footer />
     </div>
   );
