@@ -67,12 +67,9 @@ export default function Hero() {
     },
   ];
   return (
-    <div
-      id="hero"
-      className="flex h-screen bg-gradient-to-r  from-gray-900 via-gray-800 to-gray-900 px-6 py-20 "
-    >
+    <div id="hero" className="flex h-screen  ">
       <div className="flex flex-col w-2/3 ">
-        <section className="h-screen flex flex-col justify-center items-center  text-white text-center w-auto">
+        <section className="h-screen flex flex-col justify-center items-center   text-center w-auto">
           <h1 className="text-5xl font-stretch-condensed">
             Hi, I'm Ashutosh Tiwari
           </h1>

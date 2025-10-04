@@ -3,7 +3,7 @@ import { Home, User, Briefcase, Mail, Code, Zap } from "lucide-react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="backdrop-opacity-100 fixed top-5 left-1/2 -translate-x-1/2  shadow-lg rounded-full px-4 py-2 flex gap-6">
+    <nav className="backdrop-opacity-100 fixed top-5 left-1/2 -translate-x-1/2  shadow-lg rounded-full px-4 py-2 flex gap-6 w-min">
       <a
         href="#hero"
         aria-label="Home"
