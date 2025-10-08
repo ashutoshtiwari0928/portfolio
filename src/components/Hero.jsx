@@ -114,7 +114,7 @@ export default function Hero() {
         <img
           src={dp}
           alt="Profile pic"
-          className="w-2/3 mx-auto shadow-lg rounded-full"
+          className="w-16 md:w-32 lg-48 mx-auto shadow-lg rounded-full"
         />
         <nav className=" shadow-lg rounded-full px-5 py-3 flex gap-6 w-min mx-auto bg-gray-900">
           <a
