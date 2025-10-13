@@ -1,49 +1,28 @@
-import tl from "../assets/tl.png";
-import AppointmentBook from "./../assets/appointmentBooking.png";
-import employeemgmtsystem from "./../assets/employeemgmtsystem.jpeg";
+import { projects } from "../info/Projects";
 export default function Projects() {
-  const projects = [
-    {
-      title: "Clinicbook",
-      desc: "An Appointment Booking System built with Spring Boot (backend) and React.js (frontend) for seamless appointment scheduling and management. Ideal for clinics, service providers, or any business that requires managing appointments efficiently.",
-      img: AppointmentBook,
-      href: "https://github.com/ashutoshtiwari0928/clinicbookApplication.git",
-    },
-    {
-      title: "Fault Detection System",
-      desc: "ML model for power transmission fault detection.",
-      img: tl,
-      href: "https://github.com/ashutoshtiwari0928/tlfaults",
-    },
-    {
-      title: "AI Blog + Chat Application",
-      desc: "This is the backend of the Employee Management System, built using Spring Boot and MySQL. It provides RESTful APIs for managing employees, handling authentication, and performing CRUD operations.",
-      img: employeemgmtsystem,
-      href: "https://github.com/ashutoshtiwari0928/Employee-Management-System-Backend",
-    },
-  ];
-
   return (
     <section id="projects" className="py-20 ">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 px-6 md:px-12 lg:px-20 py-10 bg-gray-950">
           {projects.map((p, i) => (
-            <a
-              key={i}
-              className="bg-white shadow-lg rounded-lg overflow-hidden"
-              href={p.href}
-            >
-              <img
-                src={p.img}
-                alt={p.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-bold">{p.title}</h3>
-                <p className="mt-2 text-gray-600">{p.desc}</p>
-              </div>
-            </a>
+            <div className="bg-gray-900 shadow-lg">
+              <a
+                key={i}
+                className="bg-gray- shadow-lg rounded-lg overflow-hidden"
+                href={p.href}
+              >
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-bold">{p.title}</h3>
+                  <p className="mt-2 text-gray-600">{p.desc}</p>
+                </div>
+              </a>
+            </div>
           ))}
         </div>
       </div>
