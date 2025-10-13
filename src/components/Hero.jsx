@@ -22,50 +22,9 @@ import {
   SiSpringsecurity,
   SiTailwindcss,
 } from "react-icons/si";
-import { Icon } from "lucide-react";
+import { skills } from "../info/Skills";
 export default function Hero() {
-  const skills = [
-    {
-      Icon: SiSpringboot,
-      name: "Spring Boot",
-    },
-    {
-      Icon: SiSpringsecurity,
-      name: "Spring Security",
-    },
-    {
-      Icon: SiMysql,
-      name: "MySQL",
-    },
-    {
-      Icon: SiPostgresql,
-      name: "PosgreSql",
-    },
-    {
-      Icon: SiMongodb,
-      name: "MongoDB",
-    },
-    {
-      Icon: SiReact,
-      name: "React.js",
-    },
-    {
-      Icon: SiGithub,
-      name: "Github",
-    },
-    {
-      Icon: SiGithubactions,
-      name: "Github Actions",
-    },
-    {
-      Icon: SiTailwindcss,
-      name: "Tailwind CSS",
-    },
-    {
-      Icon: SiPython,
-      name: "Python",
-    },
-  ];
+  console.log(skills);
   return (
     <div id="hero" className="flex h-screen  ">
       <div className="flex flex-col w-2/3 ">

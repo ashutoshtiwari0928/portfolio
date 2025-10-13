@@ -57,7 +57,7 @@ function NavbarV2() {
               href={item.href}
               aria-label={item.label}
               title={item.label}
-              className="text-gray-600 hover:text-indigo-600 transition block"
+              className="text-gray-700 hover:text-indigo-600 transition block"
             >
               {<item.Icon size={24} />}
             </a>
