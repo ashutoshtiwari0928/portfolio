@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="flex flex-col lg:flex-row h-auto lg:h-screen text-white px-6 md:px-12 lg:px-20 py-10 bg-gray-950"
+      className="flex flex-col lg:flex-row h-auto lg:h-screen text-white px-6 md:px-12 lg:px-20 py-5 bg-gray-950"
     >
       {/* ===== Left Section ===== */}
       <div className="flex flex-col lg:w-2/3 w-full text-center lg:text-left justify-center items-center lg:items-start space-y-6">
@@ -24,8 +24,12 @@ export default function Hero() {
           </p>
 
           <div className="flex justify-center lg:justify-start mt-6">
-            <a href={resume} download="AshutoshTiwari.pdf">
-              <button className="px-6 py-3 bg-gray-900 rounded-lg hover:text-indigo-600 transition shadow-lg">
+            <a
+              href={resume}
+              download="AshutoshTiwari.pdf"
+              className="flex bg-gray-900 px-5 py-3 space-0.5 rounded-full"
+            >
+              <button className=" hover:text-indigo-600 transition shadow-lg">
                 Download Resume!
               </button>
             </a>

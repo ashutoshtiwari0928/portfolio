@@ -9,6 +9,8 @@ import {
   SiGithubactions,
   SiTailwindcss,
   SiPython,
+  SiDocker,
+  SiApachekafka,
 } from "react-icons/si";
 
 export const skills = [
@@ -22,4 +24,6 @@ export const skills = [
   { Icon: SiGithubactions, name: "GitHub Actions" },
   { Icon: SiTailwindcss, name: "Tailwind CSS" },
   { Icon: SiPython, name: "Python" },
+  { Icon: SiDocker, name: "Docker" },
+  { Icon: SiApachekafka, name: "Apache Kafka" },
 ];

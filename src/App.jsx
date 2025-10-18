@@ -8,6 +8,7 @@ import Timeline from "./components/Timeline";
 import Projects from "./components/Projects";
 import Footer from "./components/Fotter";
 import HeroV2 from "./components/HeroV2";
+import ProjectsV2 from "./components/ProjectsV2";
 import { Popover } from "@base-ui-components/react/popover";
 function App() {
   const [count, setCount] = useState(0);
