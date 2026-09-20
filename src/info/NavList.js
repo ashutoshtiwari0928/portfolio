@@ -1,4 +1,4 @@
-import { Home, Briefcase, Code, Zap } from "lucide-react";
+import { Home, Briefcase, Code, Zap, Layers } from "lucide-react";
 export const NavList = [
   {
     Icon: Home,
@@ -6,14 +6,19 @@ export const NavList = [
     label: "Home",
   },
   {
-    Icon: Briefcase,
-    href: "#timeline",
-    label: "Experience and Education",
+    Icon: Layers,
+    href: "#architecture",
+    label: "Architecture",
   },
   {
     Icon: Code,
     href: "#projects",
     label: "Projects",
+  },
+  {
+    Icon: Briefcase,
+    href: "#timeline",
+    label: "Experience and Education",
   },
   {
     Icon: Zap,

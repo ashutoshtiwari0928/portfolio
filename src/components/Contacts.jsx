@@ -1,11 +1,4 @@
-import logolinkedin from "../assets/logolinkedin.png";
-import logoleetcode from "../assets/logoleetcode.png";
-import logogmail from "../assets/logogmail.png";
-import logohackerrank from "../assets/logohackerrank.png";
-import logogithub from "../assets/logogithub.jpeg";
-import logogfg from "../assets/gfg.png";
 import { SiInstagram, SiLinkedin, SiGmail } from "react-icons/si";
-import { Icon } from "lucide-react";
 export default function Contact() {
   const links = [
     {
@@ -17,7 +10,6 @@ export default function Contact() {
       Icon: SiLinkedin,
       href: "https://www.linkedin.com/in/ashutosh-tiwari28/",
       title: "Linkedin",
-      src: logolinkedin,
     },
     {
       Icon: SiInstagram,

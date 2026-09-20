@@ -5,7 +5,7 @@ function NavbarV2() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="backdrop-blur-lg bg-white/30 fixed top-10 sm:left-1/2 sm:-translate-1/2 left-10/12 -translate-x-2/12 shadow-lg rounded-full px-4 py-2 sm:flex block sm:items-center gap-6 w-min z-50">
+      <nav className="backdrop-blur-lg bg-gray-900/80 border border-gray-700 fixed top-6 sm:left-1/2 sm:-translate-x-1/2 left-1/2 -translate-x-1/2 shadow-2xl shadow-indigo-950/40 rounded-full px-4 py-2 sm:flex block sm:items-center gap-6 w-min z-50">
         {/* desktop buttons */}
         <div className="hidden sm:flex sm:gap-6">
           {NavList.map((item) => (
@@ -13,7 +13,7 @@ function NavbarV2() {
               href={item.href}
               aria-label={item.label}
               title={item.label}
-              className="text-gray-800 hover:text-indigo-600 transition"
+              className="text-gray-300 hover:text-indigo-400 transition"
             >
               {<item.Icon size={24} />}
             </a>
@@ -21,7 +21,7 @@ function NavbarV2() {
         </div>
         {/* moblie menu button */}
         <button
-          className="sm:hidden block text-gray-800 pb-2"
+          className="sm:hidden block text-gray-300 pb-2"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -34,8 +34,8 @@ function NavbarV2() {
               href={item.href}
               aria-label={item.label}
               title={item.label}
-              className="text-gray-800
-              hover:text-indigo-600 transition block"
+              className="text-gray-300
+              hover:text-indigo-400 transition block"
             >
               {<item.Icon size={24} />}
             </a>

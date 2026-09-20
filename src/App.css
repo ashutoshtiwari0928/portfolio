@@ -3,3 +3,26 @@
 .root {
   isolation: isolate;
 }
+
+body {
+  margin: 0;
+  background-color: #030712;
+  color: #f9fafb;
+}
+
+.app-bg {
+  background-image:
+    radial-gradient(circle, rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+    linear-gradient(180deg, #0f172a 0%, #111827 40%, #030712 100%);
+  background-size:
+    26px 26px,
+    100% 100%;
+  background-repeat: repeat, no-repeat;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #818cf8, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

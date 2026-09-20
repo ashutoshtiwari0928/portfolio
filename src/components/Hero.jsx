@@ -58,7 +58,7 @@ export default function Hero() {
           id="skills"
           className="  flex flex-wrap text-white mx-auto my-auto  gap-3 "
         >
-          {skills.map((skill, i) => (
+          {skills.map((skill) => (
             <div
               className="shadow-lg rounded-full px-5 py-3 flex mx-auto bg-gray-900 w-max gap-2 
                     hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500"
